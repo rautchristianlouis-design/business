@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fotora Studio</title>
+  <link rel="stylesheet" href="stylesheets.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== HEADER AND NAVIGATION ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">Fotora Studio</a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== HOME ===== -->
+    <section id="home" class="homepage">
+      <h1>FOTORA STUDIO</h1>
+      <p class="lead">Photos are Everything</p>
+      <div class="button-row">
+        <a class="btn btn-secondary" href="#contact">Find us</a>
+      </div>
+    </section>
+<br>
+<br>
+<br>
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+
+        <div class="about-text about-intro">
+          <h2>About Us</h2>
+          <p>Fotora Studio is a Kibawe-based photography and marketing studio in 
+            Bukidnon that helps individuals, brands, and communities show up with clarity, confidence, 
+            and intention. Offering professional photography, creative content, and brand-focused marketing support. </p>
+        </div>
+
+        <figure class="about-photo about-photo-a">
+          <img src="assets/about1.jpg" alt="">
+        </figure>
+
+        <figure class="about-photo about-photo-b">
+          <img src="assets/about2.jpg" alt="">
+        </figure>
+
+        <div class="about-text about-more">
+          <p>Fotora goes beyond producing beautiful images by capturing identity, purpose, 
+            and meaningful stories. Guided by its promise, “For the way you deserve to be seen,” 
+            the studio continues to elevate local people and businesses through thoughtful visual storytelling.</p>
+          <ul class="facts">
+            <li>Started at July 8, 2026</li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== PRODUCT AND SERVICES ===== -->
+    <section id="services" class="section section-tint">
+      <div class="container">
+        <h2>Products and Services</h2>
+        <p class="section-intro"></p>
+        <div class="services-layout">
+          <article class="service-featured">
+            
+            <a class="service-open" href="#catalog" aria-label="View our products">
+              <figure class="service-photo"><img src="assets/PS1.png" alt="Our photography products"></figure>
+            </a>
+            <h3>Type of picture Portrait/Landscape<span></span></h3>
+            <h3> Short description:</h3>
+            <p>ako imo atoang tanan</p>
+            <div class="service-desc">
+            </div>
+          </article>
+
+          <div class="service-side">
+            <article class="service-mini">
+              <div class="service-mini-text">
+                <p>A photographer captures beautiful moments and 
+                  memories of every customer.</p>
+              </div>
+              <figure class="service-photo"><img src="assets/Ser1.jpg" alt=""></figure>
+            </article>
+            <article class="service-mini">
+              <div class="service-mini-text">
+                <p>Our photography service focuses on capturing 
+                  special moments through creative and professional shots.</p>
+              </div>
+              <figure class="service-photo"><img src="assets/Ser2.jpg" alt=""></figure>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    
+    <!-- ===== PRODUCT BOOK MODAL ===== -->
+  <div class="book-modal" id="catalog" role="dialog" aria-modal="true" aria-label="Product catalog">
+    <a class="book-backdrop" href="#services" aria-label="Close"></a>
+
+    <input class="sr-radio" type="radio" name="book-page" id="pg1" checked aria-label="Product 1">
+    <input class="sr-radio" type="radio" name="book-page" id="pg2" aria-label="Product 2">
+    <input class="sr-radio" type="radio" name="book-page" id="pg3" aria-label="Product 3">
+    <input class="sr-radio" type="radio" name="book-page" id="pg4" aria-label="Product 4">
+    <input class="sr-radio" type="radio" name="book-page" id="pg5" aria-label="Product 5">
+
+    <div class="book">
+      <a class="book-close" href="#services" aria-label="Close">&times;</a>
+
+      <!-- Product 1 -->
+      <div class="book-slide s1">
+        <span class="book-nav book-nav-off" aria-hidden="true"><i class="fa-solid fa-chevron-left"></i></span>
+        <div class="book-spread">
+          <figure class="book-page book-page-left">
+            <img src="assets/D1.jpg" alt="Debutant">
+          </figure>
+          <div class="book-page book-page-right">
+            <p class="book-count">Product 1 of 5</p>
+            <h3>Debutant</h3>
+            <p class="book-price">₱0,000</p>
+            <p>Short description of this picture.</p>
+          </div>
+        </div>
+        <label class="book-nav" for="pg2" aria-label="Next product"><i class="fa-solid fa-chevron-right"></i></label>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="book-slide s2">
+        <label class="book-nav" for="pg1" aria-label="Previous product"><i class="fa-solid fa-chevron-left"></i></label>
+        <div class="book-spread">
+          <figure class="book-page book-page-left">
+            <img src="assets/B1.jpg" alt="Birthday">
+          </figure>
+          <div class="book-page book-page-right">
+            <p class="book-count">Product 2 of 5</p>
+            <h3>Birthday</h3>
+            <p class="book-price">₱0,000</p>
+            <p>Short description of this picture</p>
+          </div>
+        </div>
+        <label class="book-nav" for="pg3" aria-label="Next product"><i class="fa-solid fa-chevron-right"></i></label>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="book-slide s3">
+        <label class="book-nav" for="pg2" aria-label="Previous product"><i class="fa-solid fa-chevron-left"></i></label>
+        <div class="book-spread">
+          <figure class="book-page book-page-left">
+            <img src="assets/F6.jpg" alt="Couple Pics">
+          </figure>
+          <div class="book-page book-page-right">
+            <p class="book-count">Product 3 of 5</p>
+            <h3>Couple</h3>
+            <p class="book-price">₱0,000</p>
+            <p>Short description of this picture.</p>
+          </div>
+        </div>
+        <label class="book-nav" for="pg4" aria-label="Next product"><i class="fa-solid fa-chevron-right"></i></label>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="book-slide s4">
+        <label class="book-nav" for="pg3" aria-label="Previous product"><i class="fa-solid fa-chevron-left"></i></label>
+        <div class="book-spread">
+          <figure class="book-page book-page-left">
+            <img src="assets/F1.jpg" alt="Family Pics">
+          </figure>
+          <div class="book-page book-page-right">
+            <p class="book-count">Product 4 of 5</p>
+            <h3>Family</h3>
+            <p class="book-price">₱0,000</p>
+            <p>Short description of this picture.</p>
+          </div>
+        </div>
+        <label class="book-nav" for="pg5" aria-label="Next product"><i class="fa-solid fa-chevron-right"></i></label>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="book-slide s5">
+        <label class="book-nav" for="pg4" aria-label="Previous product"><i class="fa-solid fa-chevron-left"></i></label>
+        <div class="book-spread">
+          <figure class="book-page book-page-left">
+            <img src="assets/E10.jpg" alt="Event">
+          </figure>
+          <div class="book-page book-page-right">
+            <p class="book-count">Product 5 of 5</p>
+            <h3>Event</h3>
+            <p class="book-price">₱0,000</p>
+            <p>Short description of this picture.</p>
+          </div>
+        </div>
+        <span class="book-nav book-nav-off" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span>
+      </div>
+    </div>
+  </div>
+
+    <!-- ===== GALLERY ===== -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+          <figure>
+            <img src="assets/B3.jpg" alt="Gallery picture">
+            <figcaption></figcaption>
+          </figure>
+          <figure>
+            <img src="assets/D1.jpg" alt="Gallery picture">
+            <figcaption></figcaption>
+          </figure>
+          <figure>
+            <img src="assets/F8.jpg" alt="Gallery picture">
+            <figcaption></figcaption>
+          </figure>
+          <figure>
+            <img src="assets/B8.jpg" alt="Gallery picture">
+            <figcaption></figcaption>
+          </figure>
+          <figure>
+            <img src="assets/E10.jpg" alt="Gallery picture">
+            <figcaption></figcaption>
+          </figure>
+          <figure>
+            <img src="assets/F1.jpg" alt="Gallery picture">
+            <figcaption></figcaption>
+          </figure>
+          <figure>
+            <img src="assets/B10.jpg" alt="Gallery picture">
+            <figcaption></figcaption>
+          </figure>
+          <figure>
+            <img src="assets/E6.jpg" alt="Gallery picture">
+            <figcaption></figcaption>
+          </figure>
+        </div>
+
+        <div class="button-row gallery-more">
+          <a class="btn btn-secondary" href="gallery.html">See more photos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT AND LOCATION ===== -->
+    <section id="contact" class="section section-tint">
+      <div class="container contact-grid">
+        <div class="contact-left">
+          <div class="contact-intro">
+            <h2>Contact Us</h2>
+            <p>Thank you for visiting Fotora Studio! We appreciate your interest in our photography services. 
+              We look forward to capturing your special moments and turning them into timeless memories.</p>
+          </div>
+
+          <div class="contact-details">
+            <h3>Get in touch</h3>
+            <p><strong>Facebook:</strong> Fotora Studio</p>
+            <p><strong>Number:</strong> <a href="tel:+639177892397">0917-789-2397</a></p>
+            <p><strong>Location:</strong> East Kibawe, Kibawe, 8720 Bukidnon</p>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <figure class="contact-picture">
+            <img src="assets/ako.jpg" alt="">
+          </figure>
+
+          <div class="contact-bottom">
+            <div class="contact-map">
+              <iframe title="Map of East Kibawe, Kibawe, Bukidnon" src="https://www.google.com/maps?q=East+Kibawe,+Kibawe,+Bukidnon,+Philippines&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="contact-hours">
+              <h3>Opening Hours</h3>
+              <dl>
+                <dt>Monday to Friday:</dt>
+                <dd></dd>
+                <dt>Saturday:</dt>
+                <dd></dd>
+                <dt>Sunday:</dt>
+                <dd></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Fotora Studio</p>
+    </div>
+  </footer>
+
+</body>
+</html>
